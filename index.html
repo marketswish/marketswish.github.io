@@ -38,7 +38,7 @@
 
         <script>
 
-              $(function() {
+            $(function() {
                 var availableSymbols = [
                   "AMD",
                   "AGYS",
@@ -66,11 +66,11 @@
                 $( "#symbols" ).autocomplete({
                   source: availableSymbols
                 });
-              });
+            });
 
-              $('#symbol').on('input propertychange paste', function() {
-
-                });
+            $('#symbol').on('input propertychange paste', function() {
+                alert();
+            });
       </script>
     </body>
 </html>
