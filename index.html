@@ -13,6 +13,40 @@
 
         <link href="/CSS/main.css" rel="stylesheet" type="text/css" />
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js" />
+        <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js" />
+
+        <script>
+              $(function() {
+                var availableTags = [
+                  "ActionScript",
+                  "AppleScript",
+                  "Asp",
+                  "BASIC",
+                  "C",
+                  "C++",
+                  "Clojure",
+                  "COBOL",
+                  "ColdFusion",
+                  "Erlang",
+                  "Fortran",
+                  "Groovy",
+                  "Haskell",
+                  "Java",
+                  "JavaScript",
+                  "Lisp",
+                  "Perl",
+                  "PHP",
+                  "Python",
+                  "Ruby",
+                  "Scala",
+                  "Scheme"
+                ];
+                $( "#tags" ).autocomplete({
+                  source: availableTags
+                });
+              });
+      </script>
 
     </head>
     <body id="home">
@@ -22,7 +56,10 @@
             The sound of Markets
         </h3>
 
-
+        <div class="ui-widget">
+          <label for="tags">Tags: </label>
+          <input id="tags">
+        </div>
 
         <footer>
             &copy; 2015 MarketSwish.com. <br /> All Rights Reserved.
