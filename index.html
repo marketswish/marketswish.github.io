@@ -29,7 +29,7 @@
         </h3>
 
 
-          <label for="symbol">Symbol</label> <input id="symbol" />
+          <label for="symbol">Symbol</label> <input id="symbol"  />
 
 
         <footer>
@@ -40,33 +40,37 @@
 
               $(function() {
                 var availableSymbols = [
-                  "ActionScript",
-                  "AppleScript",
-                  "Asp",
-                  "BASIC",
-                  "C",
-                  "C++",
-                  "Clojure",
-                  "COBOL",
-                  "ColdFusion",
-                  "Erlang",
-                  "Fortran",
-                  "Groovy",
-                  "Haskell",
-                  "Java",
-                  "JavaScript",
-                  "Lisp",
-                  "Perl",
-                  "PHP",
-                  "Python",
-                  "Ruby",
-                  "Scala",
-                  "Scheme"
+                  "AMD",
+                  "AGYS",
+                  "ATRO",
+                  "BBCN",
+                  "HAWK",
+                  "WIFI",
+                  "CDNS",
+                  "CALD",
+                  "CFNL",
+                  "CERE",
+                  "EAGL",
+                  "DVCR",
+                  "GBSN",
+                  "MSFT",
+                  "AAPL",
+                  "BAC",
+                  "INTC",
+                  "RCS",
+                  "ARO",
+                  "ASTI",
+                  "X",
+                  "S"
                 ];
                 $( "#symbols" ).autocomplete({
                   source: availableSymbols
                 });
               });
+
+              $('#symbol').on('input propertychange paste', function() {
+
+                });
       </script>
     </body>
 </html>
