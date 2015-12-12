@@ -18,10 +18,29 @@
         <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 
+
+
+    </head>
+    <body id="home">
+
+        <h1><img id="logo" src="/Images/Market-Swish-Logo-v4.png" /></h1>
+        <h3>
+            The sound of Markets
+        </h3>
+
+        <div class="ui-widget">
+          <label for="symbols">Symbols </label>
+          <input id="symbols" />
+        </div>
+
+        <footer>
+            &copy; 2015 MarketSwish.com. <br /> All Rights Reserved.
+        </footer>
+
         <script>
 
               $(function() {
-                var availableTags = [
+                var availableSymbols = [
                   "ActionScript",
                   "AppleScript",
                   "Asp",
@@ -45,27 +64,10 @@
                   "Scala",
                   "Scheme"
                 ];
-                $( "#tags" ).autocomplete({
-                  source: availableTags
+                $( "#symbols" ).autocomplete({
+                  source: availableSymbols
                 });
               });
       </script>
-
-    </head>
-    <body id="home">
-
-        <h1><img id="logo" src="/Images/Market-Swish-Logo-v4.png" /></h1>
-        <h3>
-            The sound of Markets
-        </h3>
-
-        <div class="ui-widget">
-          <label for="tags">Tags: </label>
-          <input id="tags">
-        </div>
-
-        <footer>
-            &copy; 2015 MarketSwish.com. <br /> All Rights Reserved.
-        </footer>
     </body>
 </html>
