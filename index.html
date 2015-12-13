@@ -1,4 +1,4 @@
-
+﻿
 <!doctype html>
 <html lang="en">
     <head>
@@ -29,7 +29,7 @@
         </h3>
 
 
-          <label for="symbol">Symbol</label> <input id="symbol"  />
+          <input id="symbol"  />
 
 
         <footer>
@@ -38,39 +38,7 @@
 
         <script>
 
-            $(function() {
-                var availableSymbols = [
-                  "AMD",
-                  "AGYS",
-                  "ATRO",
-                  "BBCN",
-                  "HAWK",
-                  "WIFI",
-                  "CDNS",
-                  "CALD",
-                  "CFNL",
-                  "CERE",
-                  "EAGL",
-                  "DVCR",
-                  "GBSN",
-                  "MSFT",
-                  "AAPL",
-                  "BAC",
-                  "INTC",
-                  "RCS",
-                  "ARO",
-                  "ASTI",
-                  "X",
-                  "S"
-                ];
-                $( "#symbols" ).autocomplete({
-                  source: availableSymbols
-                });
-            });
-
-            $('#symbol').on('input propertychange paste', function() {
-                alert();
-            });
+           
       </script>
     </body>
 </html>
